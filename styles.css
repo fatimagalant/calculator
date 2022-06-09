@@ -1,31 +1,37 @@
 #output {
-  border: 1px solid cornflowerblue;
-  height: 100px;
-  border-radius: 8px;
-  background-color: cornflowerblue;
+  height: 75px;
+  border: 3px solid black;
+  color: white;
+  background-color: black;
+  font-size: xx-large;
+  /* width: 19%; */
 }
-element.style {
+.calculator {
+  max-width: 350px;
+  margin-inline: auto;
+}
+.button-container {
+  background-color: black;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* width: 300px; */
 }
 button {
-  background-color: black;
-  color: cornflowerblue;
-  width: 15%;
-  padding: 50px;
-  font-size: 30px;
+  aspect-ratio: 1;
+  width: 25%;
   border-radius: 50%;
 }
-
-.calculator {
-  background-color: black;
-  margin: auto;
-  width: 500px;
-  height: auto;
-  text-align: center;
-  border-radius: 8px;
-  aspect-ratio: 1;
+.grey {
+  background-color: grey;
+  border-radius: 50%;
+}
+.cornflowerblue {
+  background-color: rgb(255, 145, 0);
+  border-radius: 50%;
+}
+.lightgrey {
+  border-radius: 50%;
 }

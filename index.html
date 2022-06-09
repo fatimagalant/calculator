@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="flexbox.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="flexbox.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- js -->
+    <script src="./index.js"></script>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
     <body>
-    <div class="calculator">
-        <div id="output">2809</div>
-        <div class="button-container">
-        <button class="grey"> AC</button>
-        <button class="grey"> +/-</button>
-        <button class="grey"> %</button>
-        <button class="cornflowerblue">÷</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="cornflowerblue">X</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="cornflowerblue">-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="cornflowerblue">+</button>
-        <button>0</button>
-        <button>. </button>
-        <button class="cornflowerblue"> =</button>
+      <div class="calculator">
+        <div id="output">
+          <h2>0</h2>
         </div>
-</body>
-    
-</body>
+        <div id="colour"></div>
+        <div class="button-container">
+        <button onclick="reset()" class="grey">C</button>
+        <button onclick="buildSum('+/-')" class="grey">+/-</button>
+        <button onclick="buildSum('%')" class="grey">%</button>
+        <button onclick="buildSum('/')" class="cornflowerblue">÷</button>
+        <button onclick="buildSum('7')" class="lightgrey">7</button>
+        <button onclick="buildSum('8')" class="lightgrey">8</button>
+        <button onclick="buildSum('9')" class="lightgrey">9</button>
+        <button onclick="buildSum('*')" class="cornflowerblue">X</button>
+        <button onclick="buildSum('4')" class="lightgrey">4</button>
+        <button onclick="buildSum('5')" class="lightgrey">5</button>
+        <button onclick="buildSum('6')" class="lightgrey">6</button>
+        <button onclick="buildSum('-')" class="cornflowerblue">-</button>
+        <button onclick="buildSum('1')" class="lightgrey">1</button>
+        <button onclick="buildSum('2')" class="lightgrey">2</button>
+        <button onclick="buildSum('3')" class="lightgrey">3</button>
+        <button onclick="buildSum('+')" class="cornflowerblue">+</button>
+        <button onclick="buildSum('0')" class="lightgrey">0</button>
+        <button onclick="buildSum('.')" class="lightgrey">.</button>
+        <button onclick="answer()" class="cornflowerblue">=</button>
+      </div>
+      <!-- bootstrap js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
 </html>
